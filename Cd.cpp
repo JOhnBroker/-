@@ -1,38 +1,36 @@
 
 #include "Cd.h"
+Cd::Cd() {
+    performers=new char[1];
+    performers[0]='\0';
+    label=new char[1];
+    label[0]='\0';
+    selections=0;
+    playtime=0.0;
+}
 Cd::Cd(const Cd & d) {
-    strcpy_s(performers,d.performers);
-    strcpy_s(label,d.label);
+    performers=new char[strlen(d.performers)+1];
+    strcpy(performers,d.performers);
+    label=new char[strlen(d.label)+1];
+    strcpy(label,d.label);
     selections=d.selections;
     playtime=d.playtime;
 }
 Cd::Cd(char const *s1, char const *s2, int n, double x) {
-    if(strlen(s1)>50){
-        char *temp=new char[strlen(s1)+1];
-        strcpy(temp,s1);
-        temp[49]='\0';
-        strcpy_s(performers,temp);
-        delete [] temp;
-    }
-    else{
-        strcpy_s(performers,s1);
-    }
-    if(strlen(s2)>20){
-        char *temp=new char[strlen(s2)+1];
-        strcpy(temp,s2);
-        temp[19]='\0';
-        strcpy_s(label,temp);
-        delete [] temp;
-    }
-    else{
-        strcpy_s(label,20,s2);
-    }
+    performers=new char[strlen(s1)+1];
+    strcpy(performers,s1);
+    label=new char[strlen(s2)+1];
+    strcpy(label,s2);
     selections=n;
     playtime=x;
 }
 Cd& Cd::operator=(const Cd &d) {
     if(this==&d)return *this;
+    delete[] performers;
+    delete[] label;
+    performers=new char[strlen(d.performers)+1];
     strcpy(performers,d.performers);
+    label=new char[strlen(d.label)+1];
     strcpy(label,d.label);
     selections=d.selections;
     playtime=d.playtime;

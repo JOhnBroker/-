@@ -6,14 +6,14 @@
 
 class Classic:public Cd {
 private:
-    std::string describe;
+    char * describe;
 public:
-    Classic(std::string,char *,char * ,int ,double);
-    Classic(std::string,Cd&);
+    Classic(char const *,char const *,char const * ,int ,double);
+    Classic(char const *,Cd&);
     void Report() const;
-    Classic & operator =(Classic &);
-    Classic(){};
-    ~Classic(){};
+    virtual  Classic & operator =(Classic &);
+    Classic();
+    ~Classic(){delete[] describe;};
 };
 
 
