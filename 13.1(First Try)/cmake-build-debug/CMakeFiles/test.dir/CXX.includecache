@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/net/Github/-/13.1(First Try)/Cd.h
+string.h
+-
+iostream
+-
+
+F:/net/Github/-/13.1(First Try)/Classic.cpp
+Classic.h
+F:/net/Github/-/13.1(First Try)/Classic.h
+
+F:/net/Github/-/13.1(First Try)/Classic.h
+Cd.h
+F:/net/Github/-/13.1(First Try)/Cd.h
+string
+-
+
+F:/net/Github/-/13.1(First Try)/main.cpp
+iostream
+-
+Classic.h
+F:/net/Github/-/13.1(First Try)/Classic.h
+
