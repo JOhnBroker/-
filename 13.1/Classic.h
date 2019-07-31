@@ -13,7 +13,7 @@ public:
     void Report() const;
     virtual  Classic & operator =(Classic &);
     Classic();
-    ~Classic(){delete[] describe;};
+    ~Classic(){};
 };
 
 

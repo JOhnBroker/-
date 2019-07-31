@@ -5,7 +5,8 @@ int main() {
 ////13.1
     Cd c1("Beatles","Capitol",14,35.5);
     Classic c2=Classic("Piano Sonata in B flat, Fantasia in-C",
-                "Alfred Brendel","Philips",2,57.17);    Cd *pcd =&c1;
+                "Alfred Brendel","Philip",2,57.17);
+    Cd *pcd =&c1;
     std::cout<<"Using object directly."<<std::endl;
     c1.Report();
     c2.Report();
