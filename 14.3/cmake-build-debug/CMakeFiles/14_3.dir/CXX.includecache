@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/net/Github/-/14.3/QueueTP.h
+
+F:/net/Github/-/14.3/Worker.cpp
+Worker.h
+F:/net/Github/-/14.3/Worker.h
+
+F:/net/Github/-/14.3/Worker.h
+iostream
+-
+string
+-
+
+F:/net/Github/-/14.3/main.cpp
+iostream
+-
+cstring
+-
+Worker.h
+F:/net/Github/-/14.3/Worker.h
+QueueTP.h
+F:/net/Github/-/14.3/QueueTP.h
+
