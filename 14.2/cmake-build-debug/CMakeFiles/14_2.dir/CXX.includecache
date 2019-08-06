@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/net/Github/-/14.2/winec.cpp
+winec.h
+F:/net/Github/-/14.2/winec.h
+
+F:/net/Github/-/14.2/winec.h
+iostream
+-
+string.h
+-
+valarray
+-
+
