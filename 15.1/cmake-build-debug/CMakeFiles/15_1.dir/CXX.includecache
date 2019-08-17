@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/net/Github/-/15.1/Tv.cpp
+Tv.h
+F:/net/Github/-/15.1/Tv.h
+
+F:/net/Github/-/15.1/Tv.h
+iostream
+-
+
+F:/net/Github/-/15.1/main.cpp
+iostream
+-
+Tv.h
+F:/net/Github/-/15.1/Tv.h
+
